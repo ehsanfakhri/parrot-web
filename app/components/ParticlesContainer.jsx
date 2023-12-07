@@ -1,18 +1,20 @@
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
-import React, { useCallback } from "react";
+import { Particles } from "react-tsparticles";
+import { loadSlim } from "tsparticles-slim";
+import { useCallback } from "react";
 
 export default function ParticlesContainer() {
   // init
   const particlesInit = useCallback(async (engine) => {
-    await loadFull(engine);
-  });
+    console.log(engine);
+    await loadSlim(engine);
+  }, []);
 
-  const particlesLoaded = useCallback(async () => {}, []);
+  const particlesLoaded = useCallback(async (container) => {
+    await console.log(container);
+  }, []);
 
   return (
     <Particles
-      className="w-full h-full absolute translate-z-0"
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
@@ -70,7 +72,7 @@ export default function ParticlesContainer() {
             speed: 1,
             straight: false,
           },
-          Number: {
+          number: {
             sensity: {
               enable: true,
               area: 800,

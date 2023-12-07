@@ -70,10 +70,11 @@ export default function Home() {
           </motion.div>
         </div>
       </div>
-      <ParticlesContainer />
+
       {/* image */}
       <div className="mt-20 w-[1200px] h-full absolute right-0 top-0">
         {/* particles */}
+        <ParticlesContainer />
 
         {/* avatar img */}
         <motion.div
