@@ -22,8 +22,9 @@ import { usePathname } from "next/navigation";
 // framer motion
 import { AnimatePresence, motion } from "framer-motion";
 
-export default function Layout({ childern }) {
+export default function Layout({ children }) {
   const pathname = usePathname();
+  console.log(pathname);
   return (
     <div
       className={`page bg-site text-white bg-cover bg-no-repeat ${sora.className} font-sora relative`}
@@ -32,9 +33,9 @@ export default function Layout({ childern }) {
       <Nav />
       <Header />
       <AnimatePresence mode="wait">
-        <motion.div key={pathname} className="h-full">
+        <motion.div key={true} className="h-full">
           <Transition />
-          {childern}
+          {children}
         </motion.div>
       </AnimatePresence>
     </div>
