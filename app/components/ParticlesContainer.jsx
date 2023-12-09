@@ -19,7 +19,7 @@ export default function ParticlesContainer() {
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
-        fullScreen: { enable: false },
+        fullScreen: { enable: true },
         background: {
           color: {
             value: "",
@@ -77,7 +77,7 @@ export default function ParticlesContainer() {
               enable: true,
               area: 800,
             },
-            value: 80,
+            value: 50,
           },
           opacity: {
             value: 0.5,
