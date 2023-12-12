@@ -78,12 +78,12 @@ export default function WorkSlider() {
               {slide.images.map((image, index) => {
                 return (
                   <div
+                    key={index}
                     className="relative rounded-lg overflow-hidden flex
                    items-center justify-center group"
                   >
                     <div
                       className="relative flex items-center justify-center group"
-                      key={index}
                     >
                       {/* image */}
                       <Image src={image.path} width={500} height={300} alt="" />
