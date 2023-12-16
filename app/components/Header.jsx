@@ -11,11 +11,12 @@ export default function Header() {
   return (
     <header className="absolute  z-30 w-full flex items-center ox-16 xl:px-0 xl:h-[90px]">
       <div className="container mx-auto">
-        <div className="flex  flex-col lg:flex-row justify-between items-center py-8">
+        <div className="flex  flex-col xl:flex-row justify-between items-center py-8 gap-4">
           {/* logo */}
           <Link href={"/"}>
             <Image
-              src={"/logo-parrot-final-02.png"}
+              className=" bg-white rounded-full px-4  "
+              src={"/Patrrot-Final-01.png"}
               width={220}
               height={48}
               alt=""
