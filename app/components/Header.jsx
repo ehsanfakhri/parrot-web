@@ -15,8 +15,8 @@ export default function Header() {
           {/* logo */}
           <Link href={"/"}>
             <Image
-              className=" bg-white rounded-full px-4  "
-              src={"/Patrrot-Final-01.png"}
+              className="   "
+              src={"/Patrrot-Final-02.png"}
               width={220}
               height={48}
               alt=""

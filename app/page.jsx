@@ -35,8 +35,8 @@ export default function Home() {
             <br /> with a&nbsp;{" "}
             <Link href={"/"}>
               <Image
-                className="mx-auto xl:mx-0"
-                src={"/logo-parrot-final-02.png"}
+                className="mx-auto xl:mx-0 bg-white rounded-full px-8"
+                src={"/Patrrot-Final-01.png"}
                 width={300}
                 height={150}
                 alt="logo-parrot-web"
