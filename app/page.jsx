@@ -35,10 +35,10 @@ export default function Home() {
             <br /> with a&nbsp;{" "}
             <Link href={"/"}>
               <Image
-                className="mx-auto xl:mx-0 bg-white rounded-full px-8"
+                className="mx-auto xl:mx-0 bg-white rounded-full px-4 py-2 mt-4  "
                 src={"/Patrrot-Final-01.png"}
-                width={300}
-                height={150}
+                width={180}
+                height={100}
                 alt="logo-parrot-web"
               />
             </Link>
