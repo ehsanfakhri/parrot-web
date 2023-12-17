@@ -117,7 +117,7 @@ export default function AboutPage() {
         <Avatar />
       </motion.div>
 
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 sm:mt-4">
         {/* text */}
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2
@@ -137,9 +137,7 @@ export default function AboutPage() {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years age, I began freelancing as a developer. Since then, I've
-            development remote work for agencies, counsulted for startup, and
-            collaborated
+            5 years age, Design and development of smart sites and platforms.
           </motion.p>
 
           {/* counters */}
@@ -252,7 +250,11 @@ export default function AboutPage() {
                   <div className="flex gap-x-4">
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {
-                      return <div key={itemIndex} className="text-2xl ">{icon}</div>;
+                      return (
+                        <div key={itemIndex} className="text-2xl ">
+                          {icon}
+                        </div>
+                      );
                     })}
                   </div>
                 </div>

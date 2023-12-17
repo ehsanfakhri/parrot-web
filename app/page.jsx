@@ -52,7 +52,7 @@ export default function Home() {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Design and development of websites and smart platforms
+            Design and development of smart sites and platforms
           </motion.p>
 
           {/* btn */}
