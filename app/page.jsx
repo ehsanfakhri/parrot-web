@@ -2,6 +2,9 @@
 // next image
 import Image from "next/image";
 
+// type writer
+import Typewriter from "typewriter-effect";
+
 // link components
 import Link from "next/link";
 
@@ -28,11 +31,31 @@ export default function Home() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1"
+            className="h1 "
           >
-            Web Developer <br />
-            & design
-            <br /> with a&nbsp;{" "}
+            <Typewriter
+              options={{
+                strings: ["Web Developer"],
+                autoStart: true,
+                loop: true,
+                delay: 100,
+              }}
+            />
+            <Typewriter
+              options={{
+                strings: ["& design"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+            <Typewriter
+              options={{
+                strings: ["with a"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+
             <Link href={"/"}>
               <Image
                 className="mx-auto xl:mx-0 bg-white rounded-full px-4 py-2 mt-4  "
@@ -44,6 +67,7 @@ export default function Home() {
             </Link>
           </motion.h1>
 
+          <h1></h1>
           {/* subtitie */}
           <motion.p
             variants={fadeIn("down", 0.3)}
